@@ -142,9 +142,6 @@ int main() {
           <<"  O   "<<setw(15)
           <<"  O2  "<<setw(15)
           <<"  OH  "<<setw(15)
-          //<<"  SUM "<<setw(15)
-          //<<" SUM_O"<<setw(15)
-          //<<" SUM_H"<<setw(15)
           <<endl;
       }
 #endif
@@ -162,32 +159,9 @@ int main() {
           // <<alpha[7]<<setw(15)
           // <<alpha[8]<<setw(15)
           //<<alpha[9]<<setw(15)
-          //<<sum<<setw(15)
-          //<<sum_O<<setw(15)
-          //<<sum_H<<setw(15)
-          //<<thermo.get_h0(temperature, pressure, alpha)<<setw(15)
           <<endl;
-        //cout<<thermo.get_h0(temperature, pressure, alpha)<<endl;
-      }
-
-//C2H4
-//CO  
-//CO2 
-//H   
-//H2  
-//H2O 
-//O   
-//O2  
-//OH  
-//RP-1
-
-
-          
+      }      
     }
-
-  // 
-  //   double *WDT=new double[species_size];
-
 
 
 
