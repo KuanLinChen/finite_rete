@@ -1,0 +1,20 @@
+No._of_chemical_reactions  =  9
+//Reaction rates: K = A*(T^B)*EXP(-E/RT)
+//Reaction pathway;            A         B        E/R        type       3rd-body      dependency
+//RP-1 = 6.2 C2H4;             3.0117E10   0.00    2.523E4     Global        no           [RP-1]^0.5
+//C2H4 + O2 = 2 CO + 2 H2;     1.290E15    1.00    2.516E4     Global        no           [c2h4]^0.5 [o2]^1.0
+O2 + H2 = 2 OH;              1.700E13    0.00    2.407E4     Elementary    no
+H2 + OH = H2O + H;           2.190E13    0.00    2.590E3     Elementary    no
+2 OH = H2O + O;              6.023E12    0.00    5.500E2     Elementary    no
+H2 + O = H + OH;             1.800E10    1.00    4.480E3     Elementary    no
+O2 + H = O + OH;             1.220E17   -0.91    8.369E3     Elementary    no
+O + H = OH;                  1.000E16    0.00        0.0     Elementary   yes
+2 O = O2;                    2.550E18   -1.00    5.939E4     Elementary   yes
+2 H = H2;                    5.000E15    0.00        0.0     Elementary   yes
+H + OH = H2O;                8.400E21   -2.00        0.0     Elementary   yes
+//CO + OH = H + CO;            4.000E12    0.00    4.030E3     Elementary    no
+//CO + O2 = CO2 + O;           3.000E12    0.00    2.500E4     Elementary    no
+//CO + O = CO2;                6.000E13    0.00        0.0     Elementary   yes
+// In addition to reaction types listed above, there are: 
+// 1) forward reaction which is similar to global reaction but without dependency
+// 2) users' defined reaction type such as heterogeneous reactions
